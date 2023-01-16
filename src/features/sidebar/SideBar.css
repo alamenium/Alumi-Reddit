@@ -1,0 +1,18 @@
+
+#sideBar{
+    background-color: #1B1B1B;
+    margin: 20px 20px 20px 12px;
+    border-radius: 20px;
+    height: calc(100vh - 130px);
+    min-width: 400px;
+
+    padding: 1em;
+    box-sizing: border-box;
+
+    overflow-x: visible;
+    overflow-y: scroll;
+}
+
+#scrollBar{
+    width: 400px;
+}

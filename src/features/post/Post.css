@@ -1,0 +1,116 @@
+
+.post{
+    border-radius: 20px;
+    margin-bottom: 30px;
+    background-color: #1B1B1B;
+    padding: 0.5em 2em;
+}
+
+.post img {
+    height: 30em;
+    max-width: 90%;
+    border-radius: 20px;
+}
+
+.post .linkEmbed img{
+    width: 10em;
+    height: auto;
+    margin: 0;
+}
+
+.post .linkEmbed{
+    background-color: rgba(255,255,255, 0.1);
+    border-radius: 20px;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.post .linkEmbed a{
+    display: inline-block;
+    color: dodgerblue;
+    text-decoration: none;
+    text-align: left;
+    padding: 0.5em 2em;
+    font-size:calc(5px + 1.5vw);
+}
+
+.post .linkEmbed a:hover{
+    text-decoration: underline;
+}
+
+.post .linkEmbed a::after{
+    content: "";
+    background-image: url("../../LINK.png");
+    background-size: cover;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 0.1em;
+    margin-left: 0.2em;
+
+}
+
+
+.post video {
+    height: 30em;
+    border-radius: 20px;
+}
+
+.post h2{
+    margin: 0.5em;
+}
+
+.post h3{
+    margin: 0.3em;
+    margin-left: 0.5em;
+
+    font-weight: 500;
+    color: rgba(255,255,255,0.7)
+}
+
+.post p{
+    margin-left: 0.6em;
+}
+
+.post .placeHolderTitle{
+    margin: 0.5em;
+    width: 16em;
+    height: 2em;
+    background-image: linear-gradient(to right, rgba(255,255,255,0.25) ,rgba(255,255,255,0) ,rgba(255,255,255,0),rgba(255,255,255,0.25));
+    border-radius: 1em;
+    background-size: 500%;
+    animation: gradient 1s ease infinite;
+}
+.post .placeHolderImage{
+
+    height: 30em;
+    width: 90%;
+    background-image: linear-gradient(to right, rgba(255,255,255,0.25) ,rgba(255,255,255,0) ,rgba(255,255,255,0),rgba(255,255,255,0.25));
+    border-radius: 1em;
+    background-size: 500%;
+    animation: gradient 1s ease infinite;
+}
+.post .placeHolderUser{
+    margin: 0.5em;
+    width: 13em;
+    height: 1.5em;
+    background-image: linear-gradient(to right, rgba(255,255,255,0.15) ,rgba(255,255,255,0) ,rgba(255,255,255,0),rgba(255,255,255,0.15));
+    border-radius: 1em;
+    background-size: 500%;
+    animation: gradient 1s ease infinite;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
